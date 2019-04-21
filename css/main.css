@@ -132,7 +132,7 @@ textarea {
 
    */
 
-
+/* Base Styles ====================================================================*/
 
 html {
     box-sizing: border-box;
@@ -152,12 +152,8 @@ body {
     line-height: 1.4em;
     color: #4f4d5b;
     max-width: 1366px;
-    margin: auto;
+    margin: 0 auto;
     background-color: #fff;
-}
-
-.special {
-    display: none;
 }
 
 h1,
@@ -170,81 +166,84 @@ h5 {
     font-weight: 700;
 }
 
-#page-header {
-    position: relative;
-    background-image: url("../img/lake-header.jpg");
-    padding: 1.5em;
-    height: 210px;
-    page
+/* slide out styles ====================================================================*/
+
+.deals-content {
+    display: none;
 }
 
-        #page-header img {
-            display: block;
-            margin: 0 auto;
+.deals-sign {
+    display: none;
+    position: absolute;
+    top: -1em;
+    right: 311px;
+    background-image: url("../img/deals-sign.png");
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 190px;
+    height: auto;
+    color: #fff;
+}
+
+        .deals-sign i {
+            font-size: 2em;
+            padding-top: .5em;
         }
 
-#main-nav {
-    position: fixed;
-    top: 210px;
+
+
+/* Header Styles ====================================================================*/
+
+#page-header {
+    background-image: url("../img/lake-header.jpg");
+    background-repeat: no-repeat;
     width: 100%;
+    height: 210px;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 2em;
+}
+
+
+/* Nav Styles - not fixed ====================================================================*/
+
+#main-nav {
+    position: relative;
     background-image: url("../img/wood-nav-bg.jpg");
     background-repeat: no-repeat;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 75px;
 }
 
         #main-nav ul {
             margin: 0;
             list-style-type: none;
             padding-top: 1.6em;
-            height: 75px;
         }
 
         #main-nav li {
             display: inline-block;
-            padding-right: 40px;
-            font-size: 1.5em;
+            font-size: 1.15em;
         }
 
-        #main-nav li a {
+        #main-nav a {
             text-decoration: none;
             color: #fff;
+            padding: 1.25em;
         }
 
-.special-sign {
-    position: absolute;
-    top: -2.75em;
-    right: 40px;
-    background-image: url("../img/deals-sign.png");
-    text-align: center;
-    width: 271px;
-    height: 150px;
-    color: #fff;
-}
-
-        .special-sign i {
-            font-size: 2.5em;
-            padding-top: .5em;
+        #main-nav a:hover {
+            color: #21293e;
+            background-color: hsla(194, 99%, 84%, 0.25)
         }
 
-.hero {
-    margin: 40px 0px;
-    position: relative;
-    width: 100%;
-}
+        #main-nav .deals a:hover {
+            background-color: #ffc25f;
+        }
 
-.hero-text {
-    position: absolute;
-    top: 2em;
-    left: 2em;
-    font-size: 2em;
-}
 
-.leafy-header {
-    background-image: url(../img/leaf-header.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 40px;
-    height: 100px;
-}
+/* Section Styes ====================================================================*/
 
 .section {
     border-bottom: 1px solid #94a4bb;
@@ -258,6 +257,59 @@ h5 {
     margin: 0px;
     padding-top: 40px;
 }
+
+/* ================Hero Image with Text ==========================*/
+
+.hero {
+    margin: 40px 0px;
+    position: relative;
+    width: 100%;
+}
+
+        .hero-text {
+            position: absolute;
+            top: 1em;
+            left: 1em;
+            font-family: 'grad', serif;
+            font-size: 2.5em;
+            color: #21293e;
+        }
+
+
+/* ====================== Leafy Divider ==========================*/
+
+.leafy-header {
+    background-image: url(../img/leaf-header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 40px;
+    height: 100px;
+}
+
+/* ====================== 2 col feature ==========================*/
+
+
+
+
+
+
+/* ====================== 4 col feature ==========================*/
+
+
+
+
+
+
+
+/* ====================== 3 col feature ==========================*/
+
+
+
+
+
+/* ========================== footer ============================*/
+
+
 
  /* ==========================================================================
    Helper classes
