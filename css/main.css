@@ -261,10 +261,15 @@ h5 {
 /* ================Hero Image with Text ==========================*/
 
 .hero {
-    margin: 40px 0px;
     position: relative;
-    width: 100%;
+    margin: 40px 0;
 }
+
+        .hero img {
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
 
         .hero-text {
             position: absolute;
