@@ -181,6 +181,35 @@ h5 {
         color: #21293e;
     }
 
+figure {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+blockquote {
+    position: relative;
+    font-style: italic;
+}
+
+blockquote h5, p {
+    position: relative;
+    z-index: 10;
+    color: #789d96;
+}
+
+blockquote h5 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+blockquote i {
+    position: absolute;
+    top: -0.5em;
+    left: -0.25em;
+    color: #eff7fa;
+    font-size: 4em;
+}
 
 /* slide out styles ====================================================================*/
 
@@ -295,40 +324,79 @@ h5 {
 .blue-section {
     background: #d0e3f4;
     margin: 40px 0px 0px 0px;
-    text-align: center;
     padding: 30px;
+    text-align: center;
 }
 
 .cabin-feature {
     float: left;
+    position: relative;
     width: 50%;
     padding: 10px;
+    text-align: left;
     overflow: hidden;
 }
 
-@media screen and (max-width: 1000px) {
-    .cabin-feature {
-        float: none;
-        width: 100%;
-    }
+        @media screen and (max-width: 1000px) {
+            .cabin-feature {
+                float: none;
+                width: 100%;
+            }
+        }
+
+.button {
+    background-color: #ffc25f;
+    border-radius: 10px;
+    padding: .75em 1.25em;
+    text-decoration: none;
+    color: #21293e;
+    font-size: 1em;
 }
 
-.feature-img {
-    position: relative;
-}
-
-.price {
+.cabin-feature h3 {
     position: absolute;
-    background-color: hsla(239, 3%, 25%, 0.66);
-    overflow: hidden;
+    top: 0;
+    left: 1em;
+    background-color: hsla(239, 3%, 25%, 0.86);
+    color: #fff;
+    padding: 0.5em;
+    text-align: left;
 }
 
-/* ====================== gallery ==========================*/
-
-.gallery {
+.icon-collection {
+    text-align: left;
     float: left;
-    width: 25%;
+    width: 100%;
+
 }
+
+        .icon-collection .icon {
+            padding: 0.5em 2em 0.5em 0em;
+        }
+
+        .icon-collection i {
+            font-size: 1.5em;
+        }
+
+.icon {
+    text-align: center;
+}
+
+        .icon figcaption {
+            font-size: 1.25em;
+            padding-top: .25em;
+        }
+
+
+/* ======================= Testimonials =========================*/
+
+blockquote.testimonial  {
+    text-align: left;
+    margin: 0;
+}
+
+
+
 
 
 /* ========================== footer ============================*/
@@ -349,6 +417,40 @@ h5 {
             width: 33.3333%;
             float: left;
         }
+
+ul#social-icons {
+    list-style: none;
+    margin-top: 40px;
+    padding-left: 0px;
+}
+
+        @media screen and (max-width: 750px) {
+            ul#social-icons {
+                list-style: none;
+                margin: 10px 0px;
+            }
+        }
+
+#social-icons li {
+    float: left;
+    padding-right: 25px;
+}
+
+#social-icons a img {
+    width: 20px;
+}
+
+#social-icons a {
+    border-bottom: 0px;
+}
+
+#social-icons a:hover {
+    border-bottom: 0px;
+}
+
+#social-icons a:hover img {
+    width: 30px;
+}
 
 
  /* ==========================================================================
