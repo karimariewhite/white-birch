@@ -166,6 +166,22 @@ h5 {
     font-weight: 700;
 }
 
+.button {
+    display: inline-block;
+    background-color: #21293e;
+    border-radius: 10px;
+    padding: .75em 1.25em;
+    text-decoration: none;
+    color: #eff7fa;
+    font-size: 1em;
+}
+
+    .button:hover {
+        background-color: #eff7fa;
+        color: #21293e;
+    }
+
+
 /* slide out styles ====================================================================*/
 
 .deals-content {
@@ -243,19 +259,12 @@ h5 {
         }
 
 
-/* Section Styes ====================================================================*/
+/* Section Styles ====================================================================*/
 
-.section {
-    border-bottom: 1px solid #94a4bb;
+.page-section {
     margin: 40px 0px;
     text-align: center;
-    padding: 0px 20px;
-}
-
-.blue-bg {
-    background: #d0e3f4;
-    margin: 0px;
-    padding-top: 40px;
+    padding: 0px 40px;
 }
 
 /* ================Hero Image with Text ==========================*/
@@ -271,16 +280,6 @@ h5 {
             margin: 0 auto;
         }
 
-        .hero-text {
-            position: absolute;
-            top: 1em;
-            left: 1em;
-            font-family: 'grad', serif;
-            font-size: 2.5em;
-            color: #21293e;
-        }
-
-
 /* ====================== Leafy Divider ==========================*/
 
 .leafy-header {
@@ -291,29 +290,65 @@ h5 {
     height: 100px;
 }
 
-/* ====================== 2 col feature ==========================*/
+/* ====================== Cabin feature ==========================*/
 
+.blue-section {
+    background: #d0e3f4;
+    margin: 40px 0px 0px 0px;
+    text-align: center;
+    padding: 30px;
+}
 
+.cabin-feature {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    overflow: hidden;
+}
 
+@media screen and (max-width: 1000px) {
+    .cabin-feature {
+        float: none;
+        width: 100%;
+    }
+}
 
+.feature-img {
+    position: relative;
+}
 
+.price {
+    position: absolute;
+    background-color: hsla(239, 3%, 25%, 0.66);
+    overflow: hidden;
+}
 
-/* ====================== 4 col feature ==========================*/
+/* ====================== gallery ==========================*/
 
-
-
-
-
-
-
-/* ====================== 3 col feature ==========================*/
-
-
-
+.gallery {
+    float: left;
+    width: 25%;
+}
 
 
 /* ========================== footer ============================*/
 
+#page-footer {
+    background-image: url("../img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
+
+        #page-footer i {
+            font-size: 2em;
+        }
+
+        .footer-content {
+            width: 33.3333%;
+            float: left;
+        }
 
 
  /* ==========================================================================
