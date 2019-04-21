@@ -121,19 +121,143 @@ textarea {
    font-weight: 700;
    font-style: normal;
 
+   Colors:
+   Sage: #789d96
+   Navy: #21293e
+   Charcoal: #4f4d5b
+   Blue-grey: #94a4bb
+   Lt blue: #d0e3f4
+   snow white: #eff7fa
+   Sunny: #ffc25f
+
    */
 
 
 
+html {
+    box-sizing: border-box;
+    background-color: #eff7fa;
+}
 
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
 
+img {
+    max-width: 100%;
+}
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4em;
+    color: #4f4d5b;
+    max-width: 1366px;
+    margin: auto;
+    background-color: #fff;
+}
 
+.special {
+    display: none;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #94a4bb;
+    font-family: 'grad', serif;
+    font-weight: 700;
+}
 
+#page-header {
+    position: relative;
+    background-image: url("../img/lake-header.jpg");
+    padding: 1.5em;
+    height: 210px;
+    page
+}
 
+        #page-header img {
+            display: block;
+            margin: 0 auto;
+        }
 
+#main-nav {
+    position: fixed;
+    top: 210px;
+    width: 100%;
+    background-image: url("../img/wood-nav-bg.jpg");
+    background-repeat: no-repeat;
+}
 
+        #main-nav ul {
+            margin: 0;
+            list-style-type: none;
+            padding-top: 1.6em;
+            height: 75px;
+        }
+
+        #main-nav li {
+            display: inline-block;
+            padding-right: 40px;
+            font-size: 1.5em;
+        }
+
+        #main-nav li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+.special-sign {
+    position: absolute;
+    top: -2.75em;
+    right: 40px;
+    background-image: url("../img/deals-sign.png");
+    text-align: center;
+    width: 271px;
+    height: 150px;
+    color: #fff;
+}
+
+        .special-sign i {
+            font-size: 2.5em;
+            padding-top: .5em;
+        }
+
+.hero {
+    margin: 40px 0px;
+    position: relative;
+    width: 100%;
+}
+
+.hero-text {
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    font-size: 2em;
+}
+
+.leafy-header {
+    background-image: url(../img/leaf-header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 40px;
+    height: 100px;
+}
+
+.section {
+    border-bottom: 1px solid #94a4bb;
+    margin: 40px 0px;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.blue-bg {
+    background: #d0e3f4;
+    margin: 0px;
+    padding-top: 40px;
+}
 
  /* ==========================================================================
    Helper classes
