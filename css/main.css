@@ -102,7 +102,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   /*
+/*
 
    Colors:
    Sage: #789d96
@@ -115,7 +115,9 @@ textarea {
 
    */
 
-/* Base Styles ====================================================================*/
+
+
+
 
 html {
     box-sizing: border-box;
@@ -194,15 +196,15 @@ blockquote i {
     float: right;
 }
 
-a {
+p a {
     color: #21293e;
 }
 
-a:hover {
+p a:hover {
     color: #ffc25f;
 }
 
-a:visited {
+p a:visited {
     color: #789d96;
 }
 
@@ -285,47 +287,40 @@ input[type=submit]:hover {
         padding: 0px 0px;
     }
 
-}
-
-/* Header Styles ====================================================================*/
-
-#page-header
+/* Header Styles ==================================================================================*/
 
 #page-header {
-    background-color: green;
-    padding: 40px 40px;
+    background-image: url(../img/lake-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-#page-header img{
-    margin: 10px auto;
+#page-header img {
+    padding: 1.75em;
+    margin: 0 auto;
 }
 
 /* Nav Styles - not fixed nav ====================================================================*/
 
 #main-nav {
-    position: relative;
-    background-image: url("../img/wood-nav-bg.jpg");
-    background-repeat: no-repeat;
     font-weight: 700;
     text-transform: uppercase;
+    background-image: url(../img/wood-nav-bg.jpg);
     height: 75px;
+    padding-top: 1.6em;
 }
 
 @media screen and (max-width: 1000px) {
     #main-nav {
-        position: relative;
-        background-image: url("../img/wood-nav-bg.jpg");
-        background-repeat: no-repeat;
-        font-weight: 700;
-        text-transform: uppercase;
+        padding-top: 0;
         height: auto;
     }
 }
 
         #main-nav ul {
-            margin: 0;
             list-style-type: none;
-            padding-top: 1.6em;
+            margin: 0;
+            padding: 0;
         }
 
         #main-nav li {
@@ -341,24 +336,13 @@ input[type=submit]:hover {
 
         #main-nav a:hover {
             color: #21293e;
-            background-color: hsla(194, 99%, 84%, 0.25)
-        }
-
-        #main-nav .deals a:hover {
-            background-color: #ffc25f;
+            background-color: hsla(194, 99%, 84%, 0.25);
         }
 
         @media screen and (max-width: 1000px) {
-            #main-nav ul {
-                padding-left: 0;
-                padding-top: 0;
-            }
-
             #main-nav li {
                 display: block;
-                font-size: 1.15em;
                 text-align: center;
-                padding: .35em 0;
             }
 
             #main-nav a {
@@ -366,25 +350,22 @@ input[type=submit]:hover {
                 padding: .45em;
             }
         }
-        
+
 .mailing i {
     color: #fff;
     font-size: 1.25em;
 }
 
-        @media screen and (max-width: 1000px) {
-            .mailing {
-                float: none;
-                padding-right: 0;
-            }
-        
-
 /* Section Styles ====================================================================*/
 
 .page-section {
     margin: 40px 0px;
-    text-align: center;
     padding: 0px 40px;
+    text-align: center;
+}
+
+.page-section p {
+    text-align: left;
 }
 
 /* ================ Hero Image with Text ==========================*/
@@ -398,6 +379,20 @@ input[type=submit]:hover {
             width: 100%;
             display: block;
             margin: 0 auto;
+        }
+
+        .hero h4 {
+            position: absolute;
+            top: 1em;
+            left: 1em;
+            color: #21293e;
+            font-style: 700;
+            font-size: 3em;
+            margin-top: 0;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 1em 1em;
+            width: 33.33%;
+            line-height: 1.25;
         }
 
 /* ====================== Leafy Divider ==========================*/
@@ -417,6 +412,10 @@ input[type=submit]:hover {
     margin: 40px 0px 0px 0px;
     padding: 30px;
     text-align: center;
+}
+
+.blue-section p {
+    text-align: left;
 }
 
 .cabin-feature {
@@ -442,6 +441,10 @@ input[type=submit]:hover {
             margin-bottom: 0;
         }
 
+        .cabin-feature img:hover {
+            opacity: 0.5;
+        }
+
 .button {
     background-color: #ffc25f;
     border-radius: 10px;
@@ -463,13 +466,9 @@ input[type=submit]:hover {
 
         @media screen and (max-width: 1000px) {
             .cabin-feature h3 {
-                position: absolute;
-                top: 1em;
-                left: 2em;
-                background-color: hsla(239, 3%, 25%, 0.86);
-                color: #fff;
+                top: 0.25em;
+                left: 1.25em;
                 padding: 0.5em;
-                text-align: left;
             }
             
         }
@@ -478,7 +477,6 @@ input[type=submit]:hover {
     text-align: left;
     float: left;
     width: 100%;
-
 }
 
 .icon-collection figure {
@@ -505,24 +503,20 @@ input[type=submit]:hover {
         }
 
 
+
 /* ========================== footer ============================*/
 
 #page-footer {
     background-image: url("../img/footer-bg.jpg");
     background-repeat: no-repeat;
     width: 100%;
-    padding: 40px;
+    padding: 20px 40px;
     color: #fff;
-    height: auto;
 }
 
         @media screen and (max-width: 800px) {
             #page-footer {
                 background-repeat: repeat-y;
-                width: 100%;
-                padding: 40px;
-                color: #fff;
-                height: auto;
                 text-align: center;
             }
         }
@@ -530,7 +524,6 @@ input[type=submit]:hover {
 .map {
     float: right;
     padding-left: 1em; 
-    padding-bottom: 40px;
 }
 
         @media screen and (max-width: 800px) {
