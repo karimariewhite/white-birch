@@ -253,7 +253,7 @@ input[type=submit]:hover {
             position: absolute;
             top: 0;
             left: 0;
-            border: 1px solid purple;
+            border: 1px solid #21293e;
             width: 25%;
             min-height: 100%;
         }
@@ -286,6 +286,15 @@ input[type=submit]:hover {
         color: #21293e;
         background-color: #ffc25f;
         padding: 0px 0px;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .mailing-list-open .mailing-list {
+            width: 75%;
+        }
+        .mailing-list-open .page-content  {
+            transform: translateX(75%);
+        }
     }
 
 /* Header Styles ==================================================================================*/
