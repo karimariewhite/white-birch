@@ -196,15 +196,15 @@ blockquote i {
     float: right;
 }
 
-a {
+p a {
     color: #21293e;
 }
 
-a:hover {
+p a:hover {
     color: #ffc25f;
 }
 
-a:visited {
+p a:visited {
     color: #789d96;
 }
 
@@ -392,6 +392,98 @@ input[type=submit]:hover {
     height: 100px;
 }
 
+/* ====================== Cabin feature ==========================*/
+
+.blue-section {
+    background: #d0e3f4;
+    margin: 40px 0px 0px 0px;
+    padding: 30px;
+    text-align: center;
+}
+
+.blue-section p {
+    text-align: left;
+}
+
+.cabin-feature {
+    float: left;
+    position: relative;
+    width: 50%;
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+        @media screen and (max-width: 1000px) {
+            .cabin-feature {
+                float: none;
+                width: 100%;
+                border-bottom: 1px solid #94a4bb;
+                padding-bottom: 2em;
+            }
+        }
+
+        .cabin-feature:last-child {
+            border-bottom: 0;
+            margin-bottom: 0;
+        }
+
+.button {
+    background-color: #ffc25f;
+    border-radius: 10px;
+    padding: .75em 1.25em;
+    text-decoration: none;
+    color: #21293e;
+    font-size: 1em;
+}
+
+.cabin-feature h3 {
+    position: absolute;
+    top: 0;
+    left: 1em;
+    background-color: hsla(239, 3%, 25%, 0.86);
+    color: #fff;
+    padding: 0.5em;
+    text-align: left;
+}
+
+        @media screen and (max-width: 1000px) {
+            .cabin-feature h3 {
+                top: 0.25em;
+                left: 1.25em;
+                padding: 0.5em;
+            }
+            
+        }
+
+.icon-collection {
+    text-align: left;
+    float: left;
+    width: 100%;
+}
+
+.icon-collection figure {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+        .icon-collection .icon {
+            padding: 0.5em 2em 0.5em 0em;
+        }
+
+        .icon-collection i {
+            font-size: 1.5em;
+        }
+
+.icon {
+    text-align: center;
+}
+
+        .icon figcaption {
+            font-size: 1.25em;
+            padding-top: .25em;
+        }
 
 
 
