@@ -171,8 +171,7 @@ blockquote {
     position: relative;
     font-style: italic;
     text-align: left;
-    margin-bottom: 2em;
-    padding: 0 2em 2em 2em;
+    margin: 1em;
 }
 
         blockquote h5 {
@@ -186,8 +185,8 @@ blockquote {
 
         blockquote i {
             position: absolute;
-            top: 0;
-            left: 0em;
+            top: .25em;
+            left: -.25em;
             color: #eff7fa;
             font-size: 3em;
         }
