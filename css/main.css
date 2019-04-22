@@ -104,23 +104,6 @@ textarea {
 
    /*
 
-   Grad Regular
-   font-family: grad, serif;
-   font-weight: 400;
-   font-style: normal;
-   
-   
-   Grad Italic
-   font-family: grad, serif;
-   font-weight: 400;
-   font-style: italic;
-   
-   
-   Grad Bold
-   font-family: grad, serif;
-   font-weight: 700;
-   font-style: normal;
-
    Colors:
    Sage: #789d96
    Navy: #21293e
@@ -144,6 +127,7 @@ html {
   }
 
 img {
+    display: block; 
     max-width: 100%;
 }
 
@@ -157,7 +141,6 @@ body {
     position: relative;
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -287,7 +270,7 @@ input[type=submit]:hover {
             position: absolute;
             top: 0;
             left: 0;
-            z-index: -150;
+            z-index: 150;
         }
 
 .mailing-list .close-icon {
@@ -305,6 +288,8 @@ input[type=submit]:hover {
 }
 
 /* Header Styles ====================================================================*/
+
+#page-header
 
 #page-header {
     background-color: green;
