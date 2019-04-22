@@ -102,22 +102,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   /*
-
-   Colors:
-   Sage: #789d96
-   Navy: #21293e
-   Charcoal: #4f4d5b
-   Blue-grey: #94a4bb
-   Lt blue: #d0e3f4
-   snow white: #eff7fa
-   Sunny: #ffc25f
-
-   */
-
-/* Base Styles ====================================================================*/
-
-
+   html {
+    box-sizing: border-box;
+    background-color: #eff7fa;
+}
 
 *, *:before, *:after {
     box-sizing: inherit;
@@ -282,289 +270,23 @@ input[type=submit]:hover {
         padding: 0px 0px;
     }
 
-}
-
 /* Header Styles ====================================================================*/
 
-#page-header
-
 #page-header {
-    background-color: green;
-    padding: 40px 40px;
+    background-image: url(../img/lake-header.jpg);
+    
 }
 
-#page-header img{
-    margin: 10px auto;
-}
-
-/* Nav Styles - not fixed nav ====================================================================*/
-
-#main-nav {
-    position: relative;
-    background-image: url("../img/wood-nav-bg.jpg");
-    background-repeat: no-repeat;
-    font-weight: 700;
-    text-transform: uppercase;
-    height: 75px;
-}
-
-@media screen and (max-width: 1000px) {
-    #main-nav {
-        position: relative;
-        background-image: url("../img/wood-nav-bg.jpg");
-        background-repeat: no-repeat;
-        font-weight: 700;
-        text-transform: uppercase;
-        height: auto;
-    }
-}
-
-        #main-nav ul {
-            margin: 0;
-            list-style-type: none;
-            padding-top: 1.6em;
-        }
-
-        #main-nav li {
-            display: inline-block;
-            font-size: 1.15em;
-        }
-
-        #main-nav a {
-            text-decoration: none;
-            color: #fff;
-            padding: 1.25em;
-        }
-
-        #main-nav a:hover {
-            color: #21293e;
-            background-color: hsla(194, 99%, 84%, 0.25)
-        }
-
-        #main-nav .deals a:hover {
-            background-color: #ffc25f;
-        }
-
-        @media screen and (max-width: 1000px) {
-            #main-nav ul {
-                padding-left: 0;
-                padding-top: 0;
-            }
-
-            #main-nav li {
-                display: block;
-                font-size: 1.15em;
-                text-align: center;
-                padding: .35em 0;
-            }
-
-            #main-nav a {
-                display: block;
-                padding: .45em;
-            }
-        }
-        
-.mailing i {
-    color: #fff;
-    font-size: 1.25em;
-}
-
-        @media screen and (max-width: 1000px) {
-            .mailing {
-                float: none;
-                padding-right: 0;
-            }
-        
-
-/* Section Styles ====================================================================*/
-
-.page-section {
-    margin: 40px 0px;
-    text-align: center;
-    padding: 0px 40px;
-}
-
-/* ================ Hero Image with Text ==========================*/
-
-.hero {
-    position: relative;
-    margin: 40px 0;
-}
-
-        .hero img {
-            width: 100%;
-            display: block;
-            margin: 0 auto;
-        }
-
-/* ====================== Leafy Divider ==========================*/
-
-.leafy-header {
-    background-image: url(../img/leaf-header.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 40px;
-    height: 100px;
-}
-
-/* ====================== Cabin feature ==========================*/
-
-.blue-section {
-    background: #d0e3f4;
-    margin: 40px 0px 0px 0px;
-    padding: 30px;
-    text-align: center;
-}
-
-.cabin-feature {
-    float: left;
-    position: relative;
-    width: 50%;
-    padding: 10px;
-    text-align: left;
-    margin-bottom: 30px;
-}
-
-        @media screen and (max-width: 1000px) {
-            .cabin-feature {
-                float: none;
-                width: 100%;
-                border-bottom: 1px solid #94a4bb;
-                padding-bottom: 2em;
-            }
-        }
-
-        .cabin-feature:last-child {
-            border-bottom: 0;
-            margin-bottom: 0;
-        }
-
-.button {
-    background-color: #ffc25f;
-    border-radius: 10px;
-    padding: .75em 1.25em;
-    text-decoration: none;
-    color: #21293e;
-    font-size: 1em;
-}
-
-.cabin-feature h3 {
-    position: absolute;
-    top: 0;
-    left: 1em;
-    background-color: hsla(239, 3%, 25%, 0.86);
-    color: #fff;
-    padding: 0.5em;
-    text-align: left;
-}
-
-        @media screen and (max-width: 1000px) {
-            .cabin-feature h3 {
-                position: absolute;
-                top: 1em;
-                left: 2em;
-                background-color: hsla(239, 3%, 25%, 0.86);
-                color: #fff;
-                padding: 0.5em;
-                text-align: left;
-            }
-            
-        }
-
-.icon-collection {
-    text-align: left;
-    float: left;
-    width: 100%;
-
-}
-
-.icon-collection figure {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-}
-
-        .icon-collection .icon {
-            padding: 0.5em 2em 0.5em 0em;
-        }
-
-        .icon-collection i {
-            font-size: 1.5em;
-        }
-
-.icon {
-    text-align: center;
-}
-
-        .icon figcaption {
-            font-size: 1.25em;
-            padding-top: .25em;
-        }
 
 
-/* ========================== footer ============================*/
 
-#page-footer {
-    background-image: url("../img/footer-bg.jpg");
-    background-repeat: no-repeat;
-    width: 100%;
-    padding: 40px;
-    color: #fff;
-    height: auto;
-}
 
-        @media screen and (max-width: 800px) {
-            #page-footer {
-                background-repeat: repeat-y;
-                width: 100%;
-                padding: 40px;
-                color: #fff;
-                height: auto;
-                text-align: center;
-            }
-        }
 
-.map {
-    float: right;
-    padding-left: 1em; 
-    padding-bottom: 40px;
-}
 
-        @media screen and (max-width: 800px) {
-            .map {
-                float: none;
-                padding-left: 0;
-                width: 100%;
-            }
-        }
 
-ul#social-icons {
-    list-style: none;
-    margin-top: 20px;
-    padding-left: 0px;
-}
 
-#social-icons li {
-    display: inline-block;
-    padding-right: 25px;
-    color: #fff;
-}
 
-#social-icons i {
-    font-size: 2em;
-}
 
-#page-footer a {
-    color: #fff;
-}
-
-#page-footer a:hover {
-    color: #ffc25f;
-}
-
-#page-footer a:visited {
-    color: #789d96;
-}
 
 
  /* ==========================================================================
