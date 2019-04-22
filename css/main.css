@@ -149,7 +149,7 @@ img {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.4em;
+    line-height: 1.5em;
     color: #4f4d5b;
     max-width: 1366px;
     margin: 0 auto;
@@ -190,6 +190,7 @@ figure {
 blockquote {
     position: relative;
     font-style: italic;
+    text-align: left;
 }
 
 blockquote h5 {
@@ -197,9 +198,6 @@ blockquote h5 {
     z-index: 10;
     color: #789d96;
     font-style: normal;
-}
-
-blockquote h5 {
     font-size: 1.5em;
     margin-bottom: 0;
 }
@@ -212,30 +210,49 @@ blockquote i {
     font-size: 4em;
 }
 
-/* slide out styles ====================================================================*/
+.bold-i-sage {
+    font-weight: bold;
+    color: #789d96;
+    float: right;
+}
 
-.deals-content {
+/* Mailing List Open ====================================================================*/
+
+.mailing-list {
     display: none;
 }
 
-.deals-sign {
-    display: none;
-    position: absolute;
-    top: -1em;
-    right: 311px;
-    background-image: url("../img/deals-sign.png");
-    background-repeat: no-repeat;
-    text-align: center;
-    width: 190px;
-    height: auto;
-    color: #fff;
-}
+.mailing-list-open {
+    overflow: hidden;
+  }
 
-        .deals-sign i {
-            font-size: 2em;
-            padding-top: .5em;
+        .mailing-list-open .mailing-list {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 1px solid purple;
+            width: 25%;
+            min-height: 100%;
         }
 
+
+        .mailing-list-open .page-content  {
+            border: 1px solid red;
+            transform: translateX(25%);
+        }
+
+        .mailing-list-open .page-content:before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: hsla(343, 95%, 71%, 0.22);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 150;
+        }
 
 
 /* Header Styles ====================================================================*/
@@ -372,6 +389,8 @@ blockquote i {
             .cabin-feature {
                 float: none;
                 width: 100%;
+                border-bottom: 1px solid #94a4bb;
+                padding: 2em 30px;
             }
         }
 
@@ -393,6 +412,19 @@ blockquote i {
     padding: 0.5em;
     text-align: left;
 }
+
+        @media screen and (max-width: 1000px) {
+            .cabin-feature h3 {
+                position: absolute;
+                top: 1em;
+                left: 2em;
+                background-color: hsla(239, 3%, 25%, 0.86);
+                color: #fff;
+                padding: 0.5em;
+                text-align: left;
+            }
+            
+        }
 
 .icon-collection {
     text-align: left;
@@ -417,14 +449,6 @@ blockquote i {
             font-size: 1.25em;
             padding-top: .25em;
         }
-
-
-/* ======================= Testimonials =========================*/
-
-blockquote.testimonial  {
-    text-align: left;
-    margin: 0;
-}
 
 
 /* ========================== footer ============================*/
