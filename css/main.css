@@ -102,7 +102,24 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   html {
+/*
+
+   Colors:
+   Sage: #789d96
+   Navy: #21293e
+   Charcoal: #4f4d5b
+   Blue-grey: #94a4bb
+   Lt blue: #d0e3f4
+   snow white: #eff7fa
+   Sunny: #ffc25f
+
+   */
+
+
+
+
+
+html {
     box-sizing: border-box;
     background-color: #eff7fa;
 }
@@ -270,24 +287,79 @@ input[type=submit]:hover {
         padding: 0px 0px;
     }
 
-/* Header Styles ====================================================================*/
+/* Header Styles ==================================================================================*/
 
 #page-header {
     background-image: url(../img/lake-header.jpg);
-    
+    background-repeat: no-repeat;
 }
 
+#page-header img {
+    padding: 1.75em;
+    margin: 0 auto;
+}
+
+/* Nav Styles - not fixed nav ====================================================================*/
+
+#main-nav {
+    font-weight: 700;
+    text-transform: uppercase;
+    background-image: url(../img/wood-nav-bg.jpg);
+    height: 75px;
+    padding-top: 1.6em;
+}
+
+@media screen and (max-width: 1000px) {
+    #main-nav {
+        height: auto;
+        padding-top: 0;
+    }
+}
+
+        #main-nav ul {
+            list-style-type: none;
+            margin: 0;
+        }
+
+        #main-nav li {
+            display: inline-block;
+            font-size: 1.15em;
+        }
+
+        #main-nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 1.25em;
+        }
+
+        #main-nav a:hover {
+            color: #21293e;
+            background-color: hsla(194, 99%, 84%, 0.25);
+        }
+
+        @media screen and (max-width: 1000px) {
+            #main-nav ul {
+                padding-left: 0;
+                padding-top: 0;
+            }
+
+            #main-nav li {
+                display: block;
+                font-size: 1.15em;
+                text-align: center;
+                padding: 0 0;
+            }
+
+            #main-nav a {
+                display: block;
+                padding: .45em;
+            }
 
 
-
-
-
-
-
-
-
-
-
+.mailing i {
+    color: #fff;
+    font-size: 1.25em;
+}
 
  /* ==========================================================================
    Helper classes
