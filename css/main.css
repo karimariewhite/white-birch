@@ -162,33 +162,35 @@ h5 {
     font-size: 1em;
 }
 
-    .button:hover {
-        background-color: #eff7fa;
-        color: #21293e;
-    }
+        .button:hover {
+            background-color: #eff7fa;
+            color: #21293e;
+        }
 
 blockquote {
     position: relative;
     font-style: italic;
     text-align: left;
+    margin-bottom: 2em;
+    padding: 0 2em 2em 2em;
 }
 
-blockquote h5 {
-    position: relative;
-    z-index: 10;
-    color: #789d96;
-    font-style: normal;
-    font-size: 1.5em;
-    margin-bottom: 0;
-}
+        blockquote h5 {
+            position: relative;
+            z-index: 10;
+            color: #789d96;
+            font-style: normal;
+            font-size: 1.25em;
+            margin-bottom: 0;
+        }
 
-blockquote i {
-    position: absolute;
-    top: -0.5em;
-    left: -0.25em;
-    color: #eff7fa;
-    font-size: 4em;
-}
+        blockquote i {
+            position: absolute;
+            top: 0;
+            left: 0em;
+            color: #eff7fa;
+            font-size: 3em;
+        }
 
 .bold-i-sage {
     font-weight: bold;
@@ -310,7 +312,7 @@ input[type=submit]:hover {
     padding-top: 1.6em;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 750px) {
     #main-nav {
         padding-top: 0;
         height: auto;
@@ -339,7 +341,7 @@ input[type=submit]:hover {
             background-color: hsla(194, 99%, 84%, 0.25);
         }
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 750px) {
             #main-nav li {
                 display: block;
                 text-align: center;
@@ -372,7 +374,9 @@ input[type=submit]:hover {
 
 .hero {
     position: relative;
-    margin: 40px 0;
+    margin: 40px 0px;
+    text-align: center;
+    line-height: 1.25;
 }
 
         .hero img {
@@ -382,17 +386,28 @@ input[type=submit]:hover {
         }
 
         .hero h4 {
-            position: absolute;
-            top: 1em;
-            left: 1em;
-            color: #21293e;
-            font-style: 700;
-            font-size: 3em;
-            margin-top: 0;
-            background-color: rgba(255, 255, 255, 0.5);
-            padding: 1em 1em;
-            width: 33.33%;
-            line-height: 1.25;
+            font-size: 1.5em;
+            margin: 0 40px 10px 40px;
+        }
+
+        @media screen and (min-width: 551px) {
+            .hero h4 {
+                position: absolute;
+                top: 1em;
+                left: 1em;
+                color: #21293e;
+                font-style: 700;
+                font-size: 2em;
+                margin-top: 0;
+                background-color: rgba(255, 255, 255, 0.5);
+                padding: .75em .75em;
+                width: 50%;
+                line-height: 1.25;
+            }
+
+            .hero .leafy-header {
+                display: none;
+            }
         }
 
 /* ====================== Leafy Divider ==========================*/
