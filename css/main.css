@@ -441,6 +441,10 @@ input[type=submit]:hover {
             margin-bottom: 0;
         }
 
+        .cabin-feature img:hover {
+            opacity: 0.5;
+        }
+
 .button {
     background-color: #ffc25f;
     border-radius: 10px;
