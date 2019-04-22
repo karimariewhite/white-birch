@@ -292,6 +292,7 @@ input[type=submit]:hover {
 #page-header {
     background-image: url(../img/lake-header.jpg);
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 #page-header img {
@@ -311,14 +312,15 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 1000px) {
     #main-nav {
-        height: auto;
         padding-top: 0;
+        height: auto;
     }
 }
 
         #main-nav ul {
             list-style-type: none;
             margin: 0;
+            padding: 0;
         }
 
         #main-nav li {
@@ -338,28 +340,60 @@ input[type=submit]:hover {
         }
 
         @media screen and (max-width: 1000px) {
-            #main-nav ul {
-                padding-left: 0;
-                padding-top: 0;
-            }
-
             #main-nav li {
                 display: block;
-                font-size: 1.15em;
                 text-align: center;
-                padding: 0 0;
             }
 
             #main-nav a {
                 display: block;
                 padding: .45em;
             }
-
+        }
 
 .mailing i {
     color: #fff;
     font-size: 1.25em;
 }
+
+/* Section Styles ====================================================================*/
+
+.page-section {
+    margin: 40px 0px;
+    padding: 0px 40px;
+    text-align: center;
+}
+
+.page-section p {
+    text-align: left;
+}
+
+/* ================ Hero Image with Text ==========================*/
+
+.hero {
+    position: relative;
+    margin: 40px 0;
+}
+
+        .hero img {
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+
+/* ====================== Leafy Divider ==========================*/
+
+.leafy-header {
+    background-image: url(../img/leaf-header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 40px;
+    height: 100px;
+}
+
+
+
 
  /* ==========================================================================
    Helper classes
